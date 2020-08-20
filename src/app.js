@@ -79,11 +79,13 @@ app.post("/repositories/:id/like", (request, response) => {
 }
 
   const resultss = repositories[resultsIndex];
-yarn 
+
+
+  
   const updateProject = {
     ... resultss,
-      likes: results.likes + 1,
-  }
+      likes: resultss.likes + 1,
+ }
 
   repositories[resultsIndex] = updateProject;
 
